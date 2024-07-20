@@ -18,7 +18,7 @@ goto ${custom_choice}
 goto custom_exit
 
 :option_one
-kernel http://netbootxyz.mywire.org/vmlinuz gfxpayload=text quiet nomodeset boot=live initrd=initrd.img fetch=http://netbootxyz.mywire.org/live/filesystem.squashfs
+kernel http://netbootxyz.mywire.org/vmlinuz gfxpayload=text toram boot=live initrd=initrd.img fetch=http://netbootxyz.mywire.org/live/filesystem.squashfs
 initrd http://netbootxyz.mywire.org/initrd.img
 boot || goto custom_exit
 
